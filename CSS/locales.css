@@ -1,0 +1,174 @@
+/* #F3DEBA CREMA
+#ABC4AA VERDE
+#8DAE8C M.CLARO
+#675D50 M.OSCURO
+#292724 casi negro */
+
+/*NORMALIZACION PARA NAVEGADORES ----------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*NORMALIZACION PARA NAVEGADORES ----------------------------*/
+
+/*COMIENZO SECCIÓN HEADER FIJA*/
+header h3 {
+    background-color: #F3DEBA;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    color: #292724;
+}
+
+.botonMenu {
+    padding: 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: whitesmoke;
+    vertical-align: middle;
+}
+
+.menu-iconos {
+    background-color: #A9907E;
+    color: #F3DEBA;
+    font-weight: 600;
+}
+
+.menu-iconos img {
+    padding: 10px;
+}
+
+.menu-iconos .botonMenu {
+    margin: 10px;
+    padding: 8.8px 16.8px;
+}
+
+.menu-iconos .botonMenu:hover {
+    border-radius: 30px;
+    padding: 8px 16px;
+    border: solid 1px white;
+}
+
+#iconoVaso {
+    width: 60px;
+    color: white;
+    vertical-align: middle;
+    margin: 0px 40px 0px 10px;
+}
+/*FIN SECCIÓN FIJA*/
+
+body {
+    background-color: #292724;
+    width: 100%;
+    margin: auto;
+}
+
+main h3 {
+    color: whitesmoke
+}
+
+main {
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+    min-height: 73vh;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.titulo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.texto h2 {
+    font-size: 2em;
+}
+
+.texto h3 {
+    color: #ABC4AA;
+}
+
+.container-mapa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    min-width: 80vw;
+    margin-top: 30px;
+}
+
+.info-locales {
+    display: flex;
+    min-width: 40vw;
+}
+
+.info-locales ul {
+    width: 100%;
+}
+
+.info-locales li {
+    margin: 10px 0;
+}
+
+.info-locales h4 {
+    font-size: 1.3em;
+}
+
+.mapa {
+    display: flex;
+    min-width: 40vw;
+}
+
+.mapa iframe {
+    min-width: 40vw;
+    min-height: 40vh;
+    height: 70vh;
+    width: 70vh;
+}
+
+/*COMIENZO SECCIÓN FIJA: FOOTER*/
+footer {
+    background-color: #F3DEBA;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #675D50;
+}
+
+.grupoIconos {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.grupoIconos img {
+    width: 30px;
+    margin: 0 10px;
+}
+/*FIN SECCIÓN FIJA*/
+
+

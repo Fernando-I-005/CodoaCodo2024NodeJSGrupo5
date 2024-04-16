@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grupo 5 Node.js CODO A CODO 2024">
+    <link rel="stylesheet" href="./CSS/promo.css" />
+    <title>Café Mondo - Promociones</title>
+    <link rel="icon" type="image/x-icon" href="./recursos/iconoVasoCafe-dark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h3>ENVIOS GRATIS A PARTIR DE $ 10.000</h3>
+        <nav class="menu-iconos">
+            <a href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png" alt="Icono de Café Mondo: Vaso de café"></a>
+            <a class="botonMenu" href="./menu.html">Menu</a>
+            <a class="botonMenu" href="./promociones.html">Promociones</a>
+            <a class="botonMenu" href="./conocenos.html">Conocenos</a>
+            <a class="botonMenu" href="./locales.html">Locales</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="tituloPromos">Promociones vigentes</h2>
+        <div class="contenedor">
+            <div class="contenedor-promociones">
+                <div class="card" style="background-image: url('./recursos/cafeClasicMedLuna.jpeg')">
+                    <div class="textos">
+                        <h3>Cafe Clasico <br> + <br> 2 medialunas</h3>
+                        <p>$3.500</p>
+                    </div>
+                    <div class="botonPromo">
+                        <button class="botonPedirPromo">Pedir</button>
+                    </div>  
+                </div>
+                <div class="card" style="background-image: url('./recursos/cafeEspecMedLuna.jpeg')">
+                    <div class="textos">
+                        <h3>Cafe de Especialidad <br> + <br> 2 medialunas</h3>
+                        <p>$4.500</p>
+                    </div>
+                    <div class="botonPromo">
+                        <button class="botonPedirPromo"> Pedir</button>
+                    </div>  
+                </div>
+                <div class="card" style="background-image: url('./recursos/cafeClasicTorta.jpeg')">
+                    <div class="textos">
+                        <h3>Cafe Clasico <br> + <br>Porcion de Torta</h3>
+                        <p>$4.000</p>
+                    </div>
+                    <div class="botonPromo">
+                        <button class="botonPedirPromo"> Pedir</button>
+                    </div>  
+                </div>
+    
+                <div class="card" style="background-image: url('./recursos/cafeEspecTorta.jpeg')">
+                    <div class="textos">
+                        <h3>Cafe de Especialidad <br> + <br> Porcion de Torta</h3>
+                        <p>$5.000</p>
+                    </div>
+                    <div class="botonPromo">
+                        <button class="botonPedirPromo"> Pedir</button>
+                    </div>   
+                </div>
+            </div>
+            <div class="form">
+                <h2>Suscribite a nuestras <br> Promociones</h2>
+                <form action="" ></form>
+                <fieldset class="FormSuscrip">
+                    <h3>Ingrese sus datos</h3><br>
+                    <label for="firstname">Nombre: </label>
+                    <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required><br>
+                    <label for="lastname">Apellido:</label>
+                    <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui..." required><br>
+                    <label for="BirthDate">Fecha Nac.: </label>
+                    <input type="date" name="birthdate"><br>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" required><br>
+                    <input type="submit" value="Suscribirse">
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footerPosition">
+        <div class="grupoIconos">
+            <a class="iconoNav" href="https://www.instagram.com/" title="Instagram" alt="Seguinos en Instagram"><img src="./recursos/instagram-icono.png" alt="Ícono de Instagram" href=""></a>
+            <a class="iconoNav" href="https://api.whatsapp.com/send?phone=541130739361" title="Whatsapp" alt="Comunicate por Whatsapp"><img src="./recursos/whatsapp-icono.png" alt="Ícono de Whatsapp"></a>
+            <a class="iconoNav" href="https://www.pedidosya.com/" title="Pedidos Ya" alt="Encontranos en Pedidos Ya"><img src="./recursos/pedidosya-icono.png" alt="Ícono de Pedidos Ya"></a>
+        </div>
+
+        <p> Copyright 2024 &copy; Grupo 5 Node.js 24136. Todos los derechos reservados.<p>
+    </footer>
+</body>
+
+</html>
