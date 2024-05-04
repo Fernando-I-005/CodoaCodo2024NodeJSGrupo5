@@ -18,7 +18,6 @@ paletaColores {
 html {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
-  /*no funciona de aca -- veerrrr!!!!!!!!!!*/
   color: #f1f1f1;
 }
 
@@ -31,13 +30,13 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+body
+{
+ font-family: "Montserrat", sans-serif;   
 }
 
-
 /*------------------------------------------------------------------------*/
-/*INICIO CSS - SE UTILIZA CSS-GRID PARA CONTAINER PRINCIPAL - DISEÑO MOBILE FIRST - 1ER BRECKPOINTS HASTA 576px*/
+/*INICIO CSS - CSS-GRID PARA CONTENEDOR PRINCIPAL - DISEÑO MOBILE FIRST - 1ER BRECKPOINTS HASTA 576px*/
 
 .grid-container {
   display: grid;
@@ -48,9 +47,13 @@ body {
     'left left left left left left'
     'right right right right right right'
     'footer footer footer footer footer footer';
+  grid-template-rows: 4% auto auto auto 10%;
+  /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
 
-/*---------------------HEADER-------------------*/
+
+
+/*--------------------------HEADER----------------------*/
 
 header {
   grid-area: header;
@@ -72,26 +75,91 @@ header h5 {
 nav {
   grid-area: nav;
   background-color: #A9907E;
-  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  /*verrrr*/
+}
+
+/****contenedor 1 de 3 // solo icono vaso  ****/
+
+#contenedorIcono {
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #iconoVaso {
-  width: 160px;
-  padding: 2px;
+  width: 60px;
+  padding: 5px 0px;
   display: inline;
   margin: 0 10px;
 }
 
-.menu-iconos {
-  margin: 10px;
+/****contenedor 2 de 3 // menuHamburguesa****/
+
+#contenedorHamburguesa {
+  /*border: solid 1px orange;*/
+  width: 60%;
+  display: flex;
+  justify-content: center;
 }
+
+#menuHamburguesa {
+  display: flex;
+  color: #f1f1f1;
+  background-color: #A9907E;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: solid 2px #f1f1f1;
+  border-radius: 0.3em;
+  width: 30px;
+  justify-content: center;
+  position: absolute;
+  top: 0.5em;
+  right: 0.8em;
+}
+
+#menuHamburguesa:hover {
+  color: #A9907E;
+  background-color: #f1f1f1;
+}
+
+#menuHamburguesa-cerrar {
+  display: none;
+}
+
+#menuHamburguesa-check {
+  display: none;
+}
+
+/*condicional de visualizacion // (~ alt126)*/
+#menuHamburguesa-check:not(:checked)~.menu-iconos {
+  display: none;
+}
+
+#menuHamburguesa-check:checked~.menu-iconos {
+  display: inline;
+}
+
+
+/*CONCIONAL QUE ALTERNA LOS SIMBOLOS MOSTRADOS EN MENU HAMB*/
+#menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
+  display: none;
+}
+
+#menuHamburguesa-check:checked~label #menuHamburguesa-cerrar {
+  display: inline-block;
+}
+
+/****contenedor 3/3 // 4 iconos navegador ****/
 
 .menu-iconos .botonMenu:hover {
   border-radius: 30px;
-  padding: 8px 16px;
+  padding: 0.1em;
   border: solid 1px #f1f1f1;
 }
 
@@ -99,21 +167,25 @@ nav {
   font-size: 1.2em;
   color: #f1f1f1;
   font-weight: 600;
-  padding: 8.8px 16.8px;
+  /*padding: 8.8px 16.8px;*/
   display: block;
-  margin: 5px 15px;
+  margin: 9px 9px;
   text-align: center;
+  width: 7em;
+  padding: auto;
 }
 
-/*-----------------------------CAJA 1 IZQUIERDA----------------------------*/
+/*-----------------------------CONTENEDOR MAIN  IZQUIERDA----------------------------*/
 
 .cajaIzquierda {
   grid-area: left;
   background-color: #292724;
   color: #f1f1f1;
-  padding: 30px 20px;
   text-align: center;
+  padding: 30px 20px;
+
 }
+
 
 #titulo1 {
   font-size: 2.5em;
@@ -156,16 +228,17 @@ nav {
   background-color: #8dae8c;
 }
 
-/*----------------------------------CAJA 2 DERECHA------------------------------*/
+/*----------------------------------CONTENEDOR ASIDE DERECHA------------------------------*/
 
 .cajaDerecha {
   grid-area: right;
   background-color: #292724;
   color: #f1f1f1;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   padding: 15px;
-  align-content: center;
+  align-content: center;*/
+  text-align: center;
 }
 
 .imagenPrincipal {
@@ -173,16 +246,19 @@ nav {
   border-radius: 30px;
 }
 
+#demo{
+margin:1em;
+}
 /*--------------------------------------FOOTER-----------------------------------*/
 
 footer {
   grid-area: footer;
   text-align: center;
   background-color: #F3DEBA;
-  text-align: center;
   padding: 5px;
   font-size: 0.8em;
   color: #675D50;
+
 }
 
 footer p {
@@ -218,25 +294,56 @@ footer p {
       'left left left left left left'
       'right right right right right right'
       'footer footer footer footer footer footer';
+    grid-template-rows: 4% 17% auto auto 10%;
   }
 
+  /* ------------------NAV------------------ */
   nav {
     padding: 0 20px;
     display: flex;
     justify-content: center;
   }
 
+  /*--*/
+  #contenedorIcono {
+    width: 30%;
+  }
+
   #iconoVaso {
-    width: 100px;
+    width: 70px;
+  }
+
+  /*--*/
+  #contenedorHamburguesa {
+    width: 70%;
+  }
+
+  /*DESPARECE x y 3 LINEAS DEL MENU HAMBUERGUESA*/
+  #menuHamburguesa, #menuHamburguesa-check {
+    display: none;
+  }
+
+  /*HABILITA VISUALIZACION DEL MENU PRINCIPAL*/
+  #menuHamburguesa-check:not(:checked)~.menu-iconos {
+    display: block;
+  }
+  #menuHamburguesa-check:checked~.menu-iconos {
+    display: block;
+  }
+
+  /*--*/
+  .menu-iconos {
+    margin: 10px;
+  }
+
+  .menu-iconos .botonMenu:hover {
+    padding: 0.3em 0.7em;
   }
 
   .botonMenu {
     font-size: 1.3em;
     display: inline;
-  }
-
-  .menu-iconos {
-    margin: 10px;
+    padding: 8.8px 16.8px;
   }
 
   .grupo1IconosNav {
@@ -247,6 +354,8 @@ footer p {
     padding: 10px;
   }
 
+
+  /* -----------------------MAIN---------------------*/
   #titulo1 {
     font-size: 3em;
     text-align: start;
@@ -262,12 +371,16 @@ footer p {
     text-align: start;
   }
 
+  /*----------------------ASIDE-----------------------*/
+
+  /*anulado reemplazado por carrusel
   .imagenPrincipal {
     width: 70%;
     border-radius: 30px;
-  }
+  }*/
 
 }
+
 
 /* NUEVO PUNTO DE QUIEBRE // DISPOSITIVOS SUPERIORES A 992px // SE IMPLEMENTA MEDIA QUERIES */
 
@@ -279,24 +392,35 @@ footer p {
       'left left left right right right'
       'footer footer footer footer footer footer';
     grid-template-rows: 4% 8% auto 10%;
-    grid-template-columns: 18% 18% 16% 15% 15% 18%;
+   /* grid-template-columns: 16% 16% 16% 16% 16% 20%;*/
   }
 
+  /*------------------NAV----------------*/
   nav {
     padding: 0 20px;
     display: flex;
     justify-content: flex-start;
   }
 
+  /*-----*/
+  #contenedorIcono {
+    width: 10%;
+  }
+
   #iconoVaso {
     width: 50px;
   }
 
-  .botonMenu {
-    font-size: 1.3em;
-    display: inline;
+
+  /*----*/
+  #contenedorHamburguesa {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
   }
 
+
+  /*---*/
   .menu-iconos {
     margin: 10px;
   }
@@ -309,6 +433,13 @@ footer p {
     display: inline;
   }
 
+  .botonMenu {
+    font-size: 1.3em;
+    display: inline;
+    margin: 20px;
+  }
+
+  /*-----------------MAIN-------------------*/
   .cajaIzquierda {
     padding: 80px 0px 0px 30px;
     text-align: start;
@@ -335,23 +466,39 @@ footer p {
   }
 
   #cuadroTexto {
-    padding: 20px 0px;
+    padding: 20px 250px 20px 0px;
   }
 
   .botonPedido {
     margin: 50px;
   }
 
+
+  /*--------------ASIDE-------------*/
+
   .cajaDerecha {
-    display: inline-block;
+    display: flex;
     text-align: center;
+    align-content: center;
+    padding: 30px;
+   
   }
 
+  /*anulado reemplazado por carrusel
   .imagenPrincipal {
     width: 80%;
     border-radius: 30px;
+  }*/
+  
+  #demo{
+ align-self:center;
+ 
   }
+  
+  
 }
+
+
 
 
 /* segun la orientacion del navegador.
@@ -362,11 +509,3 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     background-color: lightblue;
   }
 }*/
-
-/*ocultar elemento //  If the screen size is 600px wide or less, hide the element 
-@media only screen and (max-width: 600px) {
-  div.example {
-    display: none;
-  }
-}
-*/

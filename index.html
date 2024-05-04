@@ -28,7 +28,6 @@
 
 
 <body>
-
   <div class="grid-container">
 
     <header>
@@ -36,21 +35,35 @@
     </header>
 
     <nav>
-      <a href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png"
-          alt="Icono de Café Mondo: Vaso de café"></a>
-      <div class="menu-iconos">
-        <div class="grupo1IconosNav">
-          <a class="botonMenu" href="./menu.html">Menú</a>
-          <a class="botonMenu" href="./promociones.html">Promociones</a>
-        </div>
-        <div class="grupo2IconosNav">
-          <a class="botonMenu" href="./conocenos.html">Conócenos</a>
-          <a class="botonMenu" href="./locales.html">Locales</a>
-        </div>
+      <div id="contenedorIcono">
+        <a href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png"
+            alt="Icono de Café Mondo: Vaso de café"></a>
       </div>
+
+
+      <div id="contenedorHamburguesa">
+        <input type="checkbox" id="menuHamburguesa-check" />
+        <label id="menuHamburguesa" for="menuHamburguesa-check">
+          <span id="menuHamburguesa-abrir">&#9776</span>
+          <span id="menuHamburguesa-cerrar">x</span>
+        </label>
+
+        <div class="menu-iconos">
+          <div class="grupo1IconosNav">
+            <a class="botonMenu" href="./menu.html">Menú</a>
+            <a class="botonMenu" href="./promociones.html">Promociones</a>
+          </div>
+
+          <div class="grupo2IconosNav">
+            <a class="botonMenu" href="./conocenos.html">Conócenos</a>
+            <a class="botonMenu" href="./locales.html">Locales</a>
+          </div>
+        </div>
+
     </nav>
 
-    <div class="cajaIzquierda">
+    <main class="cajaIzquierda">
+
       <p id="titulo1">Pausa.</p>
       <p id="titulo2">Café Mondo.</p>
       <p id="titulo3">Rewind.</p>
@@ -62,17 +75,19 @@
           Te esperamos con el café más delicioso y un montón de opciones dulces en uno de los lugares
           mas lindos de la Ciudad de Buenos Aires.
         </p>
-
         <p>Ahora sí: Mondo. Rewind.</p>
         <br>
         <h5>Pasá a retirarlo o recibilo en tu casa con sólo un click.</h5>
       </div>
+
       <div>
         <a class="botonPedido" href="">Hacé tu pedido</a>
       </div>
-    </div>
 
-    <div class="cajaDerecha">
+    </main>
+
+
+    <aside class="cajaDerecha">
 
       <!-- Carrusel desde bootstrap -->
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -87,10 +102,12 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./recursos/fachadaCarrusel.jpg" alt="Fachada Mondo Sucursal 1" class="d-block w-100 imagenPrincipal">
+            <img src="./recursos/fachadaCarrusel.jpg" alt="Fachada Mondo Sucursal 1"
+              class="d-block w-100 imagenPrincipal">
           </div>
           <div class="carousel-item">
-            <img src="./recursos/cafeteriaCarrusel.jpg" alt="Barra Mondo sucursal 3" class="d-block w-100 imagenPrincipal">
+            <img src="./recursos/cafeteriaCarrusel.jpg" alt="Barra Mondo sucursal 3"
+              class="d-block w-100 imagenPrincipal">
           </div>
           <div class="carousel-item">
             <img src="./recursos/cafeLibroV2.jpg" alt="Imagen cafe libro" class="d-block w-100 imagenPrincipal">
@@ -107,8 +124,7 @@
       </div>
 
       <!--<img id="imagenPrincipal" src="./recursos/cafeLibro.jpg" alt="Imagen de un cafe sobre una mesa"></img> -->
-
-    </div>
+    </aside>
 
     <footer>
       <div class="grupoIconosFooter">

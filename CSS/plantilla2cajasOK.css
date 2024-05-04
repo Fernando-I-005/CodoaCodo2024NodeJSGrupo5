@@ -29,9 +29,9 @@ ol {
 a {
   text-decoration: none;
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
+body
+{
+ font-family: "Montserrat", sans-serif;   
 }
 
 
@@ -47,7 +47,7 @@ body {
     'left left left left left left'
     'right right right right right right'
     'footer footer footer footer footer footer';
-  grid-template-rows: 4% auto auto 50% 10%;
+  grid-template-rows: 4% auto auto auto 10%;
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
 
@@ -179,72 +179,29 @@ nav {
 
 .cajaIzquierda {
   grid-area: left;
-  /*border: solid 6px blue;*/
-  display: inline-block;
-  background-color: #292724;
+  border: solid 2px blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* a partir de aca va el css nuevo */
-/*contenedor1 texto*/
-.texto {
-  padding: 15px;
-}
 
-.titulo img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
 
-.texto h3 {
-  color: #ABC4AA;
-}
 
-.texto h5 {
-  font-size: 1em;
-  color: #f1f1f1;
-}
+/*----------------------------------CONTENEDOR ASIDE DERECHA------------------------------*/
 
-.info-locales {
-  padding: 0px 0px 30px 50px;
-}
-
-.info-locales li {
-  font-size: 1.1em;
-  color: #f1f1f1;
-  margin: 15px 10px;
-}
-
-.info-locales h6 {
-  font-size: 0.8em;
-  margin: 0px;
-}
-
-.info-locales h5 {
-  font-size: 1em;
-  margin: 0px;
-}
-
-.info-locales h4 {
-  font-size: 1em;
-  color: #ABC4AA;
-  margin: 0px 0px 5px 0px;
-  font-weight: 700;
-  text-decoration: underline 2px;
-
-}
-
-/*------------------CONTENEDOR ASIDE DERECHA----------------------*/
 .cajaDerecha {
   grid-area: right;
-  background-color: #292724;
+  border: solid 2px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mapa {
-  width: 100%;
-  height: 100%;
-  padding: 3%;
-}
+/* a partir de aca va el css nuevo */
+
 
 
 /*--------------------------------------FOOTER-----------------------------------*/
@@ -292,7 +249,7 @@ footer p {
       'left left left left left left'
       'right right right right right right'
       'footer footer footer footer footer footer';
-    grid-template-rows: 4% 17% auto 50% 10%;
+    grid-template-rows: 4% 17% auto auto 10%;
   }
 
   /* ------------------NAV------------------ */
@@ -357,26 +314,20 @@ footer p {
 
   /* -----------------------MAIN---------------------*/
 
-  .cajaIzquierda {
-    text-align: center;
-  }
 
-  .info-locales {
-    padding: 0px;
-  }
 
-  .info-locales ul {
-    padding: 0px;
-  }
 
-  .info-locales li {
-    margin: 0px;
-  }
-}
+
+
+
+
   /*----------------------ASIDE-----------------------*/
 
 
-/*sin cambios*/
+
+
+
+}
 
 
 /* NUEVO PUNTO DE QUIEBRE // DISPOSITIVOS SUPERIORES A 992px // SE IMPLEMENTA MEDIA QUERIES */
@@ -389,7 +340,7 @@ footer p {
       'left left left right right right'
       'footer footer footer footer footer footer';
     grid-template-rows: 4% 8% auto 10%;
-    grid-template-columns: 12% 12% 12% 20% 20% 24%;
+    grid-template-columns: 16% 16% 18 16% 16% 18%;
   }
 
   /*------------------NAV----------------*/
@@ -408,12 +359,14 @@ footer p {
     width: 50px;
   }
 
+
   /*----*/
   #contenedorHamburguesa {
     width: 90%;
     display: flex;
     justify-content: flex-start;
   }
+
 
   /*---*/
   .menu-iconos {
@@ -436,23 +389,35 @@ footer p {
 
   /*-----------------MAIN-------------------*/
 
-  .cajaIzquierda {
-    text-align: left;
-  }
 
-  .info-locales {
-    padding: 10px 10px 10px 60px;
-  }
 
-  .info-locales li {
-    margin: 30px;
-  }
+
+
+
 
 
   /*--------------ASIDE-------------*/
 
-  .mapa {
-    padding: 10%;
-  }
+
+
+
+
+
+
+
+
+
 
 }
+
+
+
+
+/* segun la orientacion del navegador.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}*/
