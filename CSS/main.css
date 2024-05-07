@@ -121,6 +121,7 @@ nav {
   position: absolute;
   top: 0.5em;
   right: 0.8em;
+  transition: all 0.4s;
 }
 
 #menuHamburguesa:hover {
@@ -173,6 +174,7 @@ nav {
   text-align: center;
   width: 7em;
   padding: auto;
+  transition: all 0.4s;
 }
 
 /*-----------------------------CONTENEDOR MAIN  IZQUIERDA----------------------------*/

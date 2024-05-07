@@ -171,6 +171,7 @@ nav {
   text-align: center;
   width: 7em;
   padding: auto;
+  transition: all 0.4s;
 }
 
 /*-----------------------------CONTENEDOR MAIN  IZQUIERDA----------------------------*/
@@ -186,34 +187,6 @@ nav {
 }
 
 /* a partir de aca va el css nuevo */
-
-/*css jorge*/
-
-/** {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 100%;
-    font-family: "Montserrat", sans-serif;
-    color: #f1f1f1;
-    background-color: #675D50;
-  }
-  
-  ul,
-  ol {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  body
-  {
-   font-family: "Montserrat", sans-serif;   
-  }*/
 
 .main-container {
   display: grid;
@@ -234,9 +207,6 @@ nav {
   font-size: 2em;
 }
 
-
-
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
@@ -245,18 +215,15 @@ nav {
   /*agregado*/
   justify-content: center;
   /*border: solid 3px red;*/
-
 }
-
 
 .card-promo {
   justify-content: center;
-  /*border: solid 3px blue;*/
+  /* border: solid 3px blue; */
   background-color: #292724;
   align-content: center;
   border-radius: 1.2em;
 }
-
 
 .img-card {
   width: 80%;
@@ -271,10 +238,9 @@ nav {
 .promo-details h4 {
   font-weight: 600;
   font-size: 1em;
-  color: #F3DEBA;
+  color: #fdf3e2e1;
   margin:0.9em;
 }
-
 
 input{
 background-color:aliceblue;
@@ -282,14 +248,13 @@ background-color:aliceblue;
   padding-left: 10px;
 }
 
-
 .card-form {
   background-color: #ABC4AA;
   border-radius: 20px;
   color: Black;
   text-align: left;
-  /*border: solid 3px yellow;*/
-padding: 1.5em 0.6em;
+  /* border: solid 3px yellow; */
+  padding: 0.5em 0.6em;
 }
 
 .card-form h2 {
@@ -297,33 +262,36 @@ padding: 1.5em 0.6em;
   font-weight: 800;
   font-size: 2em;
   justify-content: space-around;
- text-align: center;
+  text-align: center;
   margin:0;
   padding: 0;
 }
 
-
 .formSuscrip {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
   border: solid 3px #675D50;
-  margin: 3em 0;
+  margin:  0;
   padding: 1em;
   border-radius: 25px;
+  
 }
 
 .formSuscrip h3 {
- text-align: center;
- margin: 0.3em;
- text-decoration: underline;
- color: #675D50;
- font-weight: 700;
+  text-align: center;
+  margin: 0.3em;
+  text-decoration: underline;
+  color: #675D50;
+  font-weight: 700;
   font-size: 1.5em;
 }
 
 .suscribirse {
-text-align: center;
- }
-
-
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 
 .suscribirse input{
   text-align: center;
@@ -332,16 +300,27 @@ text-align: center;
   padding: 0.4em ;
   border-radius: 10px;
   margin:1.4em;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 1em;
   width: 40%;
   padding-left: 0px;
  }
  
-
-
-
-
+.btn-promo{
+  display: inline-block;
+  text-decoration: none;
+  color: #ABC4AA;
+  padding: 10px 50px;
+  border: 3px solid #ABC4AA;
+  border-radius: 30px;
+  margin: 5px 0 10px;
+  transition: all 0.4s;
+}
+.btn-promo:hover{
+  background: #ABC4AA;
+  color: #675D50;
+}
 
 /*--------------------------------------FOOTER-----------------------------------*/
 
