@@ -97,7 +97,14 @@ nav {
   padding: 5px 0px;
   display: inline;
   margin: 0 10px;
+  --animate-duration: 2s;
 }
+
+.iconoMondo{
+  --animate-duration: 5s; /* modifica la velocidad de la animacion del icono*/
+}
+
+
 
 /****contenedor 2 de 3 // menuHamburguesa****/
 
@@ -121,7 +128,6 @@ nav {
   position: absolute;
   top: 0.5em;
   right: 0.8em;
-  transition: all 0.4s;
 }
 
 #menuHamburguesa:hover {
@@ -174,7 +180,6 @@ nav {
   text-align: center;
   width: 7em;
   padding: auto;
-  transition: all 0.4s;
 }
 
 /*-----------------------------CONTENEDOR MAIN  IZQUIERDA----------------------------*/

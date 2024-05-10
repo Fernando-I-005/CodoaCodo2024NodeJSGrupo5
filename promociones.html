@@ -15,6 +15,8 @@
 
   <script src="https://kit.fontawesome.com/f0e4497dc2.js" crossorigin="anonymous"></script>
   <!-- se agrega para poder linkear iconos de fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- se agrega para poder linkear animate.css ++++++++++++++++ -->
+
 
   <link rel="Stylesheet" href="CSS/promociones.css"> <!-- EL CSS PROPIO DEBE IR SIEMPRE lUEGO DE BOOTSTAP -->
 
@@ -25,6 +27,8 @@
 
 </head>
 
+
+
 <body>
   <div class="grid-container">
 
@@ -34,7 +38,7 @@
 
     <nav>
       <div id="contenedorIcono">
-        <a href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png"
+        <a class="animate__animated animate__bounceInDown iconoMondo" href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png"
             alt="Icono de Café Mondo: Vaso de café"></a>
       </div>
 
@@ -61,7 +65,8 @@
     </nav>
 
     <main class="cajaIzquierda">
-               
+       
+        
         <div class="main-container">
       <div class="tituloPromos">
         <h2>Promociones vigentes</h2>
@@ -72,7 +77,6 @@
           <div class="promo-details">
             <h3>Promo 1</h3>
             <h4>Cafe de especialidad a elección mas una porción de torta o dos medialunas</h4>
-            <a href="#" class="btn-promo">Pedir</a>
           </div>
         </div>
         <div class="card-promo">
@@ -80,21 +84,21 @@
           <div class="promo-details">
             <h3>Promo 2</h3>
             <h4>Té a elección mas una porción de torta o dos medialunas</h4>
-            <a href="#" class="btn-promo">Pedir</a>
           </div>
         </div>
         <div class="card-promo">
           <img class="img-card" src="recursos/reunionCafe.jpg"alt="Promo para grupo de amigos o trabajo">
           <div class="promo-details">
             <h3>Promo 3</h3>
-            <h4>Reunite con amigos o por trabajo</h4><br>
-            <a href="#" class="btn-promo">Consultá disponibilidad</a>
+            <h4>Reunite con amigos o por trabajo.<br> Consultá disponibilidad</h4>
           </div>
         </div>
+
+
         <div class="card-form">
-          <div  class="formSuscrip">
           <h2>Suscribite a nuestras <br> </h2>
-          <h2> Promociones</h2><br>
+          <h2> Promociones</h2>
+          <div  class="formSuscrip">
             <form action="" ></form>
             <fieldset>
               <h3>Ingrese sus datos</h3><br>
@@ -113,9 +117,13 @@
         </div>          
       </div>    
     </div>
-         
+        
+        
+        
+            
     </main>
 
+    
     <footer>
       <div class="grupoIconosFooter">
         <a class="iconoFooter" href="https://www.instagram.com/" title="Seguinos" target="_blank"> <i
@@ -124,6 +132,7 @@
             class="fa-brands fa-whatsapp"> </i></a>
         <a class="iconoFooter" href="https://www.pedidosya.com/" title="Pedidos Ya" alt="Encontranos en Pedidos Ya"><img
             src="./recursos/pedidosya-icono.png" alt="Ícono de Pedidos Ya"></a>
+        <a class="iconoFooter" href="./contacto.html" title="Contacto" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
       </div>
       <div>
         <p> Copyright 2024 &copy; Grupo 5 Node.js 24136. Todos los derechos reservados.
