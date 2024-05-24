@@ -40,7 +40,7 @@ var footerJs= `
             class="fa-brands fa-whatsapp"> </i></a>
         <a class="iconoFooter" href="https://www.pedidosya.com/" title="Pedidos Ya" alt="Encontranos en Pedidos Ya"><img
             src="./recursos/pedidosya-icono.png" alt="Ícono de Pedidos Ya"></a>
-        <a class="iconoFooter" href="./contacto.html" title="Contacto" target="_blank"> <i class="fa-solid fa-envelope"></i></a> 
+        <a class="iconoFooter" href="./contacto.html" title="Contacto" target=""> <i class="fa-solid fa-envelope"></i></a> 
             
       </div>
       <div>

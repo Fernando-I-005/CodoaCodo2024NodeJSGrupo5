@@ -185,35 +185,6 @@ nav {
 
 }
 
-/* a partir de aca va el css nuevo */
-
-/*css jorge*/
-
-/** {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 100%;
-    font-family: "Montserrat", sans-serif;
-    color: #f1f1f1;
-    background-color: #675D50;
-  }
-  
-  ul,
-  ol {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  body
-  {
-   font-family: "Montserrat", sans-serif;   
-  }*/
 
 .main-container {
   display: grid;
@@ -235,8 +206,6 @@ nav {
 }
 
 
-
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
@@ -248,7 +217,6 @@ nav {
 
 }
 
-
 .card-promo {
   justify-content: center;
   /*border: solid 3px blue;*/
@@ -256,7 +224,6 @@ nav {
   align-content: center;
   border-radius: 1.2em;
 }
-
 
 .img-card {
   width: 80%;
@@ -275,13 +242,11 @@ nav {
   margin:0.9em;
 }
 
-
 input{
 background-color:aliceblue;
   width: 100%;
   padding-left: 10px;
 }
-
 
 .card-form {
   background-color: #ABC4AA;
@@ -323,8 +288,6 @@ padding: 1.5em 0.6em;
 text-align: center;
  }
 
-
-
 .suscribirse input{
   text-align: center;
   background-color: #292724;
@@ -338,10 +301,20 @@ text-align: center;
   padding-left: 0px;
  }
  
-
-
-
-
+ .btn-promo{
+  display: inline-block;
+  text-decoration: none;
+  color: #ABC4AA;
+  padding: 10px 50px;
+  border: 3px solid #ABC4AA;
+  border-radius: 30px;
+  margin: 5px 0 10px;
+  transition: all 0.4s;
+}
+.btn-promo:hover{
+  background: #ABC4AA;
+  color: #675D50;
+}
 
 /*--------------------------------------FOOTER-----------------------------------*/
 

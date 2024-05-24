@@ -25,23 +25,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--de google font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"> <!--de google font -->
-
 </head>
-
-
 
 <body>
   <div class="grid-container">
-
     <header id="headerID">
     </header>
-
     <nav id="navID">
     </nav>
-
     <main class="cajaIzquierda">
-
-
       <div class="main-container">
         <div class="tituloPromos">
           <h2>Promociones vigentes</h2>
@@ -52,6 +44,7 @@
             <div class="promo-details">
               <h3>Promo 1</h3>
               <h4>Cafe de especialidad a elección mas una porción de torta o dos medialunas</h4>
+              <a href="./formShop.html" class="btn-promo">Pedir</a>
             </div>
           </div>
           <div class="card-promo">
@@ -59,49 +52,49 @@
             <div class="promo-details">
               <h3>Promo 2</h3>
               <h4>Té a elección mas una porción de torta o dos medialunas</h4>
+              <a href="./formShop.html" class="btn-promo">Pedir</a>
             </div>
           </div>
           <div class="card-promo">
             <img class="img-card" src="recursos/reunionCafe.jpg" alt="Promo para grupo de amigos o trabajo">
             <div class="promo-details">
-              <h3>Promo 3</h3>
-              <h4>Reunite con amigos o por trabajo.<br> Consultá disponibilidad</h4>
+            <h3>Promo 3</h3>
+            <h4>Reunite con amigos o por trabajo</h4><br>
+            <a href="./contacto.html" class="btn-promo">Consultá disponibilidad</a>
             </div>
           </div>
-
-
           <div class="card-form">
-            <h2>Suscribite a nuestras <br> </h2>
-            <h2> Promociones</h2>
+            <h2>Suscribite a nuestras <br> Promociones</h2>
             <div class="formSuscrip">
-              <form action=""></form>
-              <fieldset>
-                <h3>Ingrese sus datos</h3><br>
-                <label for="firstname">Nombre: </label>
-                <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required><br>
-                <label for="lastname">Apellido:</label>
-                <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..." required><br>
-                <label for="BirthDate">Fecha Nac.: </label>
-                <input type="date" name="birthdate"><br>
-                <label for="email">Email </label>
-                <input type="email" name="email" required><br>
+              <form action="" id="form" method="get" target="">
+                <fieldset>
+                  <h3>Ingrese sus datos</h3><br>
+                  <label for="firstname">Nombre: </label>
+                  <input type="text" name="firstname" placeholder="Ingrese su nombre aquí..." required><br>
+                  <label for="lastname">Apellido:</label>
+                  <input type="text" name="lastname" placeholder="Ingrese su apellido aquí..." required><br>
+                  <label for="birthdate">Fecha Nac.: </label>
+                  <input type="date" name="birthdate"><br>
+                  <label for="email">Email: </label>
+                  <input type="email" name="email" placeholder="Ingrese su email aqui..." required><br>
+                  <label for="phone">Teléfono: </label>
+                  <input type="text" name="phone" placeholder="Ingrese su número de teléfono aquí..." required><br>
+                </fieldset>
                 <div class="suscribirse">
-                  <input type="submit" value="Suscribirse">
+                  <input type="submit" value="Suscribirse"><br>
+                  <p>Todos los campos son obligatorios.</p>
                 </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-
     </main>
-
 
     <footer id="footerID">
     </footer>
-
   </div>
-
+  <script src="./JS/formValidSuscrip.js"></script>
   <script src="./JS/headerNavFooter.js"></script> <!--se vincula a archivo JS-->
 </body>
-
 </html>

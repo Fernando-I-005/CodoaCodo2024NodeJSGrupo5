@@ -207,7 +207,7 @@ form {
 .contenedorTitulo h2 {
   text-align: center;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 800;
   color: #f1f1f1;
   margin: 0.7em 1.3em;
 
@@ -243,7 +243,7 @@ form label {
   border: solid 2px #675D50;
   width: 100%;
   margin-bottom: 0.4em;
-  background-color: #F3DEBA;
+  background-color: #ece7df;
   border-radius: 0.2em;
   font-size: 0.9em;
   padding: 0.2em 0.2em 0.2em 0.6em
@@ -268,17 +268,8 @@ padding:opx;
 }
 
 .select{
-  background-color:#F3DEBA;
+  background-color:#ece7df;
 }
-
-
-
-
-
-
-
-
-
 
 .contenedorBotones {
   /*border: solid 2px white;*/
@@ -300,7 +291,6 @@ padding:opx;
 .reset {
   background-color: #ABC4AA;
 }
-
 
 /*--------------------------------------FOOTER-----------------------------------*/
 
