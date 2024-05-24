@@ -34,6 +34,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+
 /*------------------------------------------------------------------------*/
 /*INICIO CSS - CSS-GRID PARA CONTENEDOR PRINCIPAL - DISEÑO MOBILE FIRST - 1ER BRECKPOINTS HASTA 576px*/
 
@@ -144,7 +145,7 @@ nav {
 }
 
 
-/*CONDICIONAL QUE ALTERNA LOS SIMBOLOS MOSTRADOS EN MENU HAMB*/
+/*CONCIONAL QUE ALTERNA LOS SIMBOLOS MOSTRADOS EN MENU HAMB*/
 #menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
   display: none;
 }
@@ -178,142 +179,117 @@ nav {
 .cajaIzquierda {
   grid-area: left;
   /*border: solid 2px blue;*/
+  background-image: url("../recursos/granosXLv2.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #675D50;
+  flex-wrap: wrap;
 
 }
 
+/* a partir de aca va el css nuevo */
 
-.main-container {
-  display: grid;
-  color: white;
-  /*border: solid 2px pink;*/
-  padding: 1.5em;
-}
-
-.tituloPromos {
-  display: grid;
-  justify-content: center;
-  color: #ABC4AA;
-  margin-bottom: 0.7em;
-}
-
-.tituloPromos h2 {
-  font-weight: 800;
-  font-size: 2em;
-}
-
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  gap: 0.8%;
-  text-align: center;
-  /*agregado*/
-  justify-content: center;
-  /*border: solid 3px red;*/
-
-}
-
-.card-promo {
-  justify-content: center;
-  /*border: solid 3px blue;*/
-  background-color: #292724;
-  align-content: center;
-  border-radius: 1.2em;
-}
-
-.img-card {
-  width: 80%;
-  border-radius: 15px 15px 0 0;
-}
-
-.promo-details h3 {
-  font-weight: 800;
-  font-size: 2.5em;
-}
-
-.promo-details h4 {
-  font-weight: 600;
-  font-size: 1em;
-  color: #F3DEBA;
-  margin:0.9em;
-}
-
-input{
-background-color:aliceblue;
-  width: 100%;
-  padding-left: 10px;
-}
-
-.card-form {
-  background-color: #ABC4AA;
-  border-radius: 20px;
-  color: Black;
-  text-align: left;
-  /*border: solid 3px yellow;*/
-padding: 1.5em 0.6em;
-}
-
-.card-form h2 {
-  display: grid;
-  font-weight: 800;
-  font-size: 2em;
-  justify-content: space-around;
- text-align: center;
-  margin:0;
-  padding: 0;
-}
-
-
-.formSuscrip {
-  border: solid 3px #675D50;
-  margin: 3em 0;
+form {
+  background-color: #F3DEBA;
   padding: 1em;
-  border-radius: 25px;
+  border: solid 6px #675D50;
+  border-radius: 1em;
 }
 
-.formSuscrip h3 {
- text-align: center;
- margin: 0.3em;
- text-decoration: underline;
- color: #675D50;
- font-weight: 700;
-  font-size: 1.5em;
+.contenedorTitulo {
+  border: solid 3px #675D50;
+  margin: 1em 0 0 0;
+  background-color: #A9907E;
+  border-radius: 0.5em;
+
 }
 
-.suscribirse {
-text-align: center;
- }
-
-.suscribirse input{
+.contenedorTitulo h2 {
   text-align: center;
-  background-color: #292724;
-  color: #f1f1f1;
-  padding: 0.4em ;
-  border-radius: 10px;
-  margin:1.4em;
-  font-weight: 600;
   font-size: 1em;
-  width: 40%;
-  padding-left: 0px;
- }
- 
- .btn-promo{
-  display: inline-block;
-  text-decoration: none;
-  color: #ABC4AA;
-  padding: 10px 50px;
-  border: 3px solid #ABC4AA;
-  border-radius: 30px;
-  margin: 5px 0 10px;
-  transition: all 0.4s;
+  font-weight: 800;
+  color: #f1f1f1;
+  margin: 0.7em 1.3em;
+
 }
-.btn-promo:hover{
-  background: #ABC4AA;
-  color: #675D50;
+
+.contenedorFormulario {
+
+  margin: 0.5em 1.3em;
+
+
+  /*width:100%;*/
+}
+
+
+/*css interno del form*/
+.contenedorDato {
+  border: solid 1px orange;
+  padding: 5px;
+
+}
+
+
+form label {
+  margin-top: 10px;
+  display: inline;
+  /*border: solid 1px red;*/
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.campoStd {
+  /*display: inline-block;*/
+  border: solid 2px #675D50;
+  width: 100%;
+  margin-bottom: 0.4em;
+  background-color: #ece7df;
+  border-radius: 0.2em;
+  font-size: 0.9em;
+  padding: 0.2em 0.2em 0.2em 0.6em
+}
+
+/*.form-floating{
+border:solid 3px black;
+padding:opx;
+}*/
+
+.contenedorTeam {
+  /*border: solid 2px #675D50 ;*/
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+
+.conocio {
+  margin: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.select{
+  background-color:#ece7df;
+}
+
+.contenedorBotones {
+  /*border: solid 2px white;*/
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.botonForm {
+  border-radius: 0.3em;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 1em;
+  color: #f1f1f1;
+  background-color: #675D50;
+  border: none;
+}
+
+.reset {
+  background-color: #ABC4AA;
 }
 
 /*--------------------------------------FOOTER-----------------------------------*/
@@ -425,10 +401,21 @@ footer p {
 
   /* -----------------------MAIN---------------------*/
 
+  .cajaIzquierda {
+    display: block;
+    
+  }
 
+  .contenedorTitulo {
+    max-width: 15em;
+    
+    margin: 1em auto;
+  }
 
-
-
+.contenedorFormulario{
+  max-width: 35em;
+  margin: 1em auto;
+}
 
 
 
@@ -494,26 +481,17 @@ footer p {
   }
 
   /*-----------------MAIN-------------------*/
-  .cards-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-  }
 
-  .card-promo {
-    width: 25%;
-  }
 
-  .card-form {
-    width: 25%;
-  }
 
-  .img-card {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-  }
+
+
+
 
 }
+
+
+
 
 /* segun la orientacion del navegador.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
@@ -522,4 +500,4 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
   body {
     background-color: lightblue;
   }
-}
+}*/

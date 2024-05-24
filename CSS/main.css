@@ -97,7 +97,14 @@ nav {
   padding: 5px 0px;
   display: inline;
   margin: 0 10px;
+  --animate-duration: 2s;
 }
+
+.iconoMondo{
+  --animate-duration: 5s; /* modifica la velocidad de la animacion del icono*/
+}
+
+
 
 /****contenedor 2 de 3 // menuHamburguesa****/
 
