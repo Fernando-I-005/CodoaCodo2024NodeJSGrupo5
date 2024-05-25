@@ -7,7 +7,6 @@ paletaColores {
   color: #292724;
 }
 
-
 /*----------------NORMALIZACION PARA NAVEGADORES -------------*/
 * {
   margin: 0px;
@@ -49,8 +48,6 @@ body {
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
 
-
-
 /*--------------------------HEADER----------------------*/
 
 header {
@@ -78,7 +75,6 @@ nav {
   align-items: center;
   padding: 0px;
   position: relative;
-  /*verrrr*/
 }
 
 /****contenedor 1 de 3 // solo icono vaso  ****/
@@ -243,7 +239,6 @@ main {
   padding: 30px;
 }
 
-
 /*---------------- tablas ---------------*/
 
 .tabla {
@@ -260,13 +255,13 @@ main {
 .fila1 {
   /*celdas izquierdas*/
   text-align: left;
- 
+
 }
 
 .fila2 {
   /* celdas derechas*/
   text-align: right;
-  
+
 }
 
 .tabla tr:hover {
@@ -404,15 +399,7 @@ footer p {
   .grupo2IconosNav {
     padding: 10px;
   }
-
-
-  /* -----------------------MAIN---------------------*/
-
-/*sin cambios*/
-
-
 }
-
 
 /* NUEVO PUNTO DE QUIEBRE // DISPOSITIVOS SUPERIORES A 992px // SE IMPLEMENTA MEDIA QUERIES */
 
@@ -469,19 +456,7 @@ footer p {
     display: inline;
     margin: 20px;
   }
-
-  /*-----------------MAIN-------------------*/
-
-
-/*sin cambios*/
-
-
-
-
 }
-
-
-
 
 /* segun la orientacion del navegador.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp

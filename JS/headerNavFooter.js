@@ -1,9 +1,8 @@
+var headerJs = `<h5>ENVÍOS GRATIS A PARTIR DE $ 10.000</h5> `
+document.getElementById("headerID").innerHTML = headerJs;
 
-var headerJs= `<h5>ENVÍOS GRATIS A PARTIR DE $ 10.000</h5> `
-document.getElementById("headerID").innerHTML=headerJs;
 
-
-var navJs= ` <div id="contenedorIcono">
+var navJs = ` <div id="contenedorIcono">
 <a class="animate__animated animate__bounceInDown iconoMondo" href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light-v03.png" 
     alt="Icono de Café Mondo: Vaso de café"></a> <!-- se agrega para poder linkear animate.css ++++++++++++++++ -->
 </div>
@@ -28,11 +27,11 @@ var navJs= ` <div id="contenedorIcono">
 </div>
 ` //comilla invertida ALT+96! - Otras comillas no aceptan el texto multilineas copiado
 
-document.getElementById("navID").innerHTML=navJs;
+document.getElementById("navID").innerHTML = navJs;
 
 
 
-var footerJs= `
+var footerJs = `
 <div class="grupoIconosFooter">
         <a class="iconoFooter" href="https://www.instagram.com/" title="Seguinos" target="_blank"> <i
             class="fa-brands fa-square-instagram"> </i></a>
@@ -48,4 +47,4 @@ var footerJs= `
         <p>
       </div>
 `
-document.getElementById("footerID").innerHTML=footerJs;
+document.getElementById("footerID").innerHTML = footerJs;

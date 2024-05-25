@@ -7,7 +7,6 @@ paletaColores {
   color: #292724;
 }
 
-
 /*----------------NORMALIZACION PARA NAVEGADORES -------------*/
 * {
   margin: 0px;
@@ -34,7 +33,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /*------------------------------------------------------------------------*/
 /*INICIO CSS - CSS-GRID PARA CONTENEDOR PRINCIPAL - DISEÑO MOBILE FIRST - 1ER BRECKPOINTS HASTA 576px*/
 
@@ -49,8 +47,6 @@ body {
   grid-template-rows: 4% auto auto 10%;
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
-
-
 
 /*--------------------------HEADER----------------------*/
 
@@ -79,7 +75,6 @@ nav {
   align-items: center;
   padding: 0px;
   position: relative;
-  /*verrrr*/
 }
 
 /****contenedor 1 de 3 // solo icono vaso  ****/
@@ -144,7 +139,6 @@ nav {
   display: inline;
 }
 
-
 /*CONCIONAL QUE ALTERNA LOS SIMBOLOS MOSTRADOS EN MENU HAMB*/
 #menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
   display: none;
@@ -166,7 +160,6 @@ nav {
   font-size: 1.2em;
   color: #f1f1f1;
   font-weight: 600;
-  /*padding: 8.8px 16.8px;*/
   display: block;
   margin: 9px 9px;
   text-align: center;
@@ -184,7 +177,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 /* a partir de aca va el css nuevo */
@@ -201,7 +193,6 @@ form {
   margin: 1em 0 0 0;
   background-color: #A9907E;
   border-radius: 0.5em;
-
 }
 
 .contenedorTitulo h2 {
@@ -210,15 +201,10 @@ form {
   font-weight: 800;
   color: #f1f1f1;
   margin: 0.7em 1.3em;
-
 }
 
 .contenedorFormulario {
-
   margin: 0.5em 1.3em;
-
-
-  /*width:100%;*/
 }
 
 
@@ -226,9 +212,7 @@ form {
 .contenedorDato {
   border: solid 1px orange;
   padding: 5px;
-
 }
-
 
 form label {
   margin-top: 10px;
@@ -239,7 +223,6 @@ form label {
 }
 
 .campoStd {
-  /*display: inline-block;*/
   border: solid 2px #675D50;
   width: 100%;
   margin-bottom: 0.4em;
@@ -249,17 +232,11 @@ form label {
   padding: 0.2em 0.2em 0.2em 0.6em
 }
 
-/*.form-floating{
-border:solid 3px black;
-padding:opx;
-}*/
-
 .contenedorTeam {
   /*border: solid 2px #675D50 ;*/
   font-size: 0.9em;
   font-weight: 600;
 }
-
 
 .conocio {
   margin: 1em;
@@ -267,8 +244,8 @@ padding:opx;
   font-weight: 600;
 }
 
-.select{
-  background-color:#ece7df;
+.select {
+  background-color: #ece7df;
 }
 
 .contenedorBotones {
@@ -301,7 +278,6 @@ footer {
   padding: 5px;
   font-size: 0.8em;
   color: #675D50;
-
 }
 
 footer p {
@@ -398,30 +374,22 @@ footer p {
     padding: 10px;
   }
 
-
   /* -----------------------MAIN---------------------*/
 
   .cajaIzquierda {
     display: block;
-    
   }
 
   .contenedorTitulo {
     max-width: 15em;
-    
     margin: 1em auto;
   }
 
-.contenedorFormulario{
-  max-width: 35em;
-  margin: 1em auto;
+  .contenedorFormulario {
+    max-width: 35em;
+    margin: 1em auto;
+  }
 }
-
-
-
-
-}
-
 
 /* NUEVO PUNTO DE QUIEBRE // DISPOSITIVOS SUPERIORES A 992px // SE IMPLEMENTA MEDIA QUERIES */
 
@@ -452,14 +420,12 @@ footer p {
     width: 50px;
   }
 
-
   /*----*/
   #contenedorHamburguesa {
     width: 90%;
     display: flex;
     justify-content: flex-start;
   }
-
 
   /*---*/
   .menu-iconos {
@@ -480,18 +446,7 @@ footer p {
     margin: 20px;
   }
 
-  /*-----------------MAIN-------------------*/
-
-
-
-
-
-
-
 }
-
-
-
 
 /* segun la orientacion del navegador.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp

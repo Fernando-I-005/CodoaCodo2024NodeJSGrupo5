@@ -7,7 +7,6 @@ paletaColores {
   color: #292724;
 }
 
-
 /*----------------NORMALIZACION PARA NAVEGADORES -------------*/
 * {
   margin: 0px;
@@ -30,9 +29,8 @@ a {
   text-decoration: none;
 }
 
-body
-{
- font-family: "Montserrat", sans-serif;   
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*------------------------------------------------------------------------*/
@@ -50,8 +48,6 @@ body
   grid-template-rows: 4% auto auto auto 10%;
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
-
-
 
 /*--------------------------HEADER----------------------*/
 
@@ -80,7 +76,6 @@ nav {
   align-items: center;
   padding: 0px;
   position: relative;
-  /*verrrr*/
 }
 
 /****contenedor 1 de 3 // solo icono vaso  ****/
@@ -100,11 +95,10 @@ nav {
   --animate-duration: 2s;
 }
 
-.iconoMondo{
-  --animate-duration: 5s; /* modifica la velocidad de la animacion del icono*/
+.iconoMondo {
+  --animate-duration: 5s;
+  /* modifica la velocidad de la animacion del icono*/
 }
-
-
 
 /****contenedor 2 de 3 // menuHamburguesa****/
 
@@ -241,10 +235,6 @@ nav {
   grid-area: right;
   background-color: #292724;
   color: #f1f1f1;
-  /*display: flex;
-  justify-content: center;
-  padding: 15px;
-  align-content: center;*/
   text-align: center;
 }
 
@@ -253,9 +243,10 @@ nav {
   border-radius: 30px;
 }
 
-#demo{
-margin:1em;
+#demo {
+  margin: 1em;
 }
+
 /*--------------------------------------FOOTER-----------------------------------*/
 
 footer {
@@ -326,7 +317,8 @@ footer p {
   }
 
   /*DESPARECE x y 3 LINEAS DEL MENU HAMBUERGUESA*/
-  #menuHamburguesa, #menuHamburguesa-check {
+  #menuHamburguesa,
+  #menuHamburguesa-check {
     display: none;
   }
 
@@ -334,6 +326,7 @@ footer p {
   #menuHamburguesa-check:not(:checked)~.menu-iconos {
     display: block;
   }
+
   #menuHamburguesa-check:checked~.menu-iconos {
     display: block;
   }
@@ -361,7 +354,6 @@ footer p {
     padding: 10px;
   }
 
-
   /* -----------------------MAIN---------------------*/
   #titulo1 {
     font-size: 3em;
@@ -377,15 +369,6 @@ footer p {
     font-size: 3em;
     text-align: start;
   }
-
-  /*----------------------ASIDE-----------------------*/
-
-  /*anulado reemplazado por carrusel
-  .imagenPrincipal {
-    width: 70%;
-    border-radius: 30px;
-  }*/
-
 }
 
 
@@ -399,7 +382,6 @@ footer p {
       'left left left right right right'
       'footer footer footer footer footer footer';
     grid-template-rows: 4% 8% auto 10%;
-   /* grid-template-columns: 16% 16% 16% 16% 16% 20%;*/
   }
 
   /*------------------NAV----------------*/
@@ -418,14 +400,12 @@ footer p {
     width: 50px;
   }
 
-
   /*----*/
   #contenedorHamburguesa {
     width: 90%;
     display: flex;
     justify-content: flex-start;
   }
-
 
   /*---*/
   .menu-iconos {
@@ -480,7 +460,6 @@ footer p {
     margin: 50px;
   }
 
-
   /*--------------ASIDE-------------*/
 
   .cajaDerecha {
@@ -488,25 +467,13 @@ footer p {
     text-align: center;
     align-content: center;
     padding: 30px;
-   
+
   }
 
-  /*anulado reemplazado por carrusel
-  .imagenPrincipal {
-    width: 80%;
-    border-radius: 30px;
-  }*/
-  
-  #demo{
- align-self:center;
- 
+  #demo {
+    align-self: center;
   }
-  
-  
 }
-
-
-
 
 /* segun la orientacion del navegador.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp

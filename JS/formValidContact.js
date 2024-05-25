@@ -1,4 +1,4 @@
-document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function (event) {
     let isValid = true;
     let errorMessage = '';
 
@@ -9,24 +9,24 @@ document.getElementById('form').addEventListener('submit', function(event) {
     // Validar Nombre y Apellido
     const firstname = document.getElementById('firstname');
     const namePattern = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
-    if (firstname.value.trim() === ''){ //metodo trim() elimina espacios en blanco
+    if (firstname.value.trim() === '') { //metodo trim() elimina espacios en blanco
         isValid = false;
         firstname.classList.add('error');
         errorMessage += 'Por favor, ingrese su nombre y apellido.\n';
-    } else if (!namePattern.test(firstname.value.trim())){
+    } else if (!namePattern.test(firstname.value.trim())) {
         isValid = false;
         firstname.classList.add('error');
         errorMessage += 'El nombre y apellido solo puede contener letras y espacios.\n';
     }
 
-   // Validar Teléfono
-   const telefono = document.getElementById('telefono');
-   const telefonoPattern = /^\d+$/;
-   if (!telefonoPattern.test(telefono.value.trim())) {
-       isValid = false;
-       telefono.classList.add('error');
-       errorMessage += 'Por favor, ingrese un número de teléfono válido (solo números).\n';
-   }
+    // Validar Teléfono
+    const telefono = document.getElementById('telefono');
+    const telefonoPattern = /^\d+$/;
+    if (!telefonoPattern.test(telefono.value.trim())) {
+        isValid = false;
+        telefono.classList.add('error');
+        errorMessage += 'Por favor, ingrese un número de teléfono válido (solo números).\n';
+    }
 
     // Validar Email
     const email = document.getElementById('email');

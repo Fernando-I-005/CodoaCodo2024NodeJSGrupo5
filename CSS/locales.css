@@ -7,7 +7,6 @@ paletaColores {
   color: #292724;
 }
 
-
 /*----------------NORMALIZACION PARA NAVEGADORES -------------*/
 * {
   margin: 0px;
@@ -34,7 +33,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /*------------------------------------------------------------------------*/
 /*INICIO CSS - CSS-GRID PARA CONTENEDOR PRINCIPAL - DISEÑO MOBILE FIRST - 1ER BRECKPOINTS HASTA 576px*/
 
@@ -50,8 +48,6 @@ body {
   grid-template-rows: 4% auto auto 50% 10%;
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
-
-
 
 /*--------------------------HEADER----------------------*/
 
@@ -184,7 +180,6 @@ nav {
   background-color: #292724;
 }
 
-/* a partir de aca va el css nuevo */
 /*contenedor1 texto*/
 .texto {
   padding: 15px;
@@ -354,7 +349,6 @@ footer p {
     padding: 10px;
   }
 
-
   /* -----------------------MAIN---------------------*/
 
   .cajaIzquierda {
@@ -373,11 +367,6 @@ footer p {
     margin: 0px;
   }
 }
-  /*----------------------ASIDE-----------------------*/
-
-
-/*sin cambios*/
-
 
 /* NUEVO PUNTO DE QUIEBRE // DISPOSITIVOS SUPERIORES A 992px // SE IMPLEMENTA MEDIA QUERIES */
 
@@ -454,5 +443,4 @@ footer p {
   .mapa {
     padding: 10%;
   }
-
 }

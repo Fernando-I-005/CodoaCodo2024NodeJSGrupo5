@@ -7,7 +7,6 @@ paletaColores {
   color: #292724;
 }
 
-
 /*----------------NORMALIZACION PARA NAVEGADORES -------------*/
 * {
   margin: 0px;
@@ -49,8 +48,6 @@ body {
   /*columna 3 y 4 prefijadas para visializar diseño responsivo // luego liberar con AUTO*/
 }
 
-
-
 /*--------------------------HEADER----------------------*/
 
 header {
@@ -78,7 +75,6 @@ nav {
   align-items: center;
   padding: 0px;
   position: relative;
-  /*verrrr*/
 }
 
 /****contenedor 1 de 3 // solo icono vaso  ****/
@@ -165,7 +161,6 @@ nav {
   font-size: 1.2em;
   color: #f1f1f1;
   font-weight: 600;
-  /*padding: 8.8px 16.8px;*/
   display: block;
   margin: 9px 9px;
   text-align: center;
@@ -205,13 +200,11 @@ nav {
   font-size: 2em;
 }
 
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 0.8%;
   text-align: center;
-  /*agregado*/
   justify-content: center;
   /*border: solid 3px red;*/
 
@@ -239,11 +232,11 @@ nav {
   font-weight: 600;
   font-size: 1em;
   color: #F3DEBA;
-  margin:0.9em;
+  margin: 0.9em;
 }
 
-input{
-background-color:aliceblue;
+input {
+  background-color: aliceblue;
   width: 100%;
   padding-left: 10px;
 }
@@ -254,7 +247,7 @@ background-color:aliceblue;
   color: Black;
   text-align: left;
   /*border: solid 3px yellow;*/
-padding: 1.5em 0.6em;
+  padding: 1.5em 0.6em;
 }
 
 .card-form h2 {
@@ -262,8 +255,8 @@ padding: 1.5em 0.6em;
   font-weight: 800;
   font-size: 2em;
   justify-content: space-around;
- text-align: center;
-  margin:0;
+  text-align: center;
+  margin: 0;
   padding: 0;
 }
 
@@ -276,32 +269,32 @@ padding: 1.5em 0.6em;
 }
 
 .formSuscrip h3 {
- text-align: center;
- margin: 0.3em;
- text-decoration: underline;
- color: #675D50;
- font-weight: 700;
+  text-align: center;
+  margin: 0.3em;
+  text-decoration: underline;
+  color: #675D50;
+  font-weight: 700;
   font-size: 1.5em;
 }
 
 .suscribirse {
-text-align: center;
- }
+  text-align: center;
+}
 
-.suscribirse input{
+.suscribirse input {
   text-align: center;
   background-color: #292724;
   color: #f1f1f1;
-  padding: 0.4em ;
+  padding: 0.4em;
   border-radius: 10px;
-  margin:1.4em;
+  margin: 1.4em;
   font-weight: 600;
   font-size: 1em;
   width: 40%;
   padding-left: 0px;
- }
- 
- .btn-promo{
+}
+
+.btn-promo {
   display: inline-block;
   text-decoration: none;
   color: #ABC4AA;
@@ -311,7 +304,8 @@ text-align: center;
   margin: 5px 0 10px;
   transition: all 0.4s;
 }
-.btn-promo:hover{
+
+.btn-promo:hover {
   background: #ABC4AA;
   color: #675D50;
 }
@@ -421,18 +415,6 @@ footer p {
   .grupo2IconosNav {
     padding: 10px;
   }
-
-
-  /* -----------------------MAIN---------------------*/
-
-
-
-
-
-
-
-
-
 }
 
 
