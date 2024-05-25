@@ -4,7 +4,7 @@ document.getElementById("headerID").innerHTML=headerJs;
 
 
 var navJs= ` <div id="contenedorIcono">
-<a class="animate__animated animate__bounceInDown iconoMondo" href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light.png" 
+<a class="animate__animated animate__bounceInDown iconoMondo" href="index.html"><img id="iconoVaso" src="./recursos/iconoVasoCafe-light-v03.png" 
     alt="Icono de Café Mondo: Vaso de café"></a> <!-- se agrega para poder linkear animate.css ++++++++++++++++ -->
 </div>
 
